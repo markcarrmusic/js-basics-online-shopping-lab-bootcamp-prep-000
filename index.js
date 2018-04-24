@@ -58,7 +58,7 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   var cardEntered = true;
-  if(cardNumber === '') {
+  if([cardNumber] === '') {
     cardEntered = false;
   }
   if(cardEntered === true) {
@@ -67,7 +67,7 @@ function placeOrder(cardNumber) {
     cart.length = 0;
     return cardText;
   } else {
-    return "Sorry, we don't have a credit card on file for you."
+    return "Sorry, we don't have a credit card on file for you.";
   }
     
   
